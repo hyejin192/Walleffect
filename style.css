@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    height: 500vh;
+    background: #000;
+}
+
+.title {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.title .title_img {
+    width: 100%;
+    height: 100%;
+}
+
+.title h1 {
+    line-height: 200px;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 2px;
+}
+
+
+.World {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+.World .stage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+.World .stage .house {
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    transform: translateZ(-490vw);
+}
+
+.World .stage .house .wall {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.World .stage .house .wall-left {
+    width: 1000vw;
+    background: url(img/bg7.jpeg);
+    transform: rotateY(90deg) translateZ(-500vw);
+}
+
+.World .stage .house .wall-right {
+    width: 1000vw;
+    background: url(img/bg7.jpeg);
+    transform: rotateY(90deg) translateZ(-400vw);
+
+}
+
+
+.World .stage .house .wall-front .wall-cont {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+/* wall-front 1 */
+.World .stage .house .wall-front-1 .wall-cont {
+    position: relative;
+    background: url(img/iphone6.png) no-repeat center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 139px;
+    background-size: cover;
+}
+
+.World .stage .house .wall-front-1 .wall-cont .wallimg {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 100%;
+    height: 90%;
+    background: url(img/jeju1.jpeg)no-repeat center;
+
+}
+.World .stage .house .wall-front-1-1 .wall-cont .wallimg {
+    position: absolute;
+    left: 300px; top: -74px;
+    transform: rotate(30deg);
+}
+/* wall-front 2 */
+.World .stage .house .wall-front-2 .wall-cont {
+    position: relative;
+    background: url(img/iphone6.png) no-repeat center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 139px;
+    background-size: cover;
+}
+
+.World .stage .house .wall-front-2 .wall-cont .wallimg {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 90%;
+    background: url(img/jeju2.jpeg)no-repeat center;
+
+}
+.World .stage .house .wall-front-2-1 .wall-cont .wallimg {
+    position: absolute;
+    right: 0; top: -100px;
+}
+
+/* wall-front 3 */
+.World .stage .house .wall-front-3 .wall-cont {
+    position: relative;
+    background: url(img/iphone6.png) no-repeat center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 139px;
+    background-size: cover;
+}
+
+.World .stage .house .wall-front-3 .wall-cont .wallimg {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 90%;
+    background: url(img/jeju3.jpeg)no-repeat center;
+    background-size: 1080px;
+}
+.World .stage .house .wall-front-3-1 .wall-cont .wallimg {
+    position: absolute;
+    left: 100px; top: -100px;
+    transform: rotate(20deg);
+}
+.World .stage .house .wall-front-3-2 .wall-cont .wallimg {
+    position: absolute;
+    right: 100px; top: 300px;
+    transform: rotate(-20deg);
+}
+/* wall-front 4 */
+.World .stage .house .wall-front-4 .wall-cont {
+    position: relative;
+    background: url(img/iphone6.png) no-repeat center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 139px;
+    background-size: cover;
+}
+
+.World .stage .house .wall-front-4 .wall-cont .wallimg {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 90%;
+    background: url(img/jeju4.jpeg)no-repeat center;
+    background-size: 1080px;
+
+}
+.World .stage .house .wall-front-4-1 .wall-cont .wallimg {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+
+}
+.World .stage .house .wall-front-4-2 .wall-cont .wallimg {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    transform: rotate(-10deg);
+
+}
+/* wall-front 5 */
+.World .stage .house .wall-front-5 .wall-cont {
+    background: url(img/iphone6.png) no-repeat center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 139px;
+    background-size: cover;
+
+}
+.World .stage .house .wall-front-5 .wall-cont .wallimg {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 90%;
+    background: url(img/lastpage.JPG)no-repeat center;
+    background-size: 1540px;
+}
+.World .stage .house .wall-front-5-1 .wall-cont .wallimg {
+    position: absolute;
+    right: 20px;
+    bottom: -30px;
+}
+
+.World .stage .house .wall-front-1 {
+    transform: translateZ(320vw);
+}
+.World .stage .house .wall-front-1-1 {
+    transform: translateZ(400vw);
+}
+
+.World .stage .house .wall-front-2 {
+    transform: translateZ(130vw);
+}
+.World .stage .house .wall-front-2-1 {
+    transform: translateZ(170vw);
+}
+.World .stage .house .wall-front-3 {
+    transform: translateZ(-120vw);
+}
+.World .stage .house .wall-front-3-1 {
+    transform: translateZ(-10vw);
+}
+.World .stage .house .wall-front-3-2 {
+    transform: translateZ(-50vw);
+}
+.World .stage .house .wall-front-4 {
+    transform: translateZ(-320vw);
+}
+.World .stage .house .wall-front-4-1 {
+    transform: translateZ(-250vw);
+}
+.World .stage .house .wall-front-4-2 {
+    transform: translateZ(-290vw);
+}
+.World .stage .house .wall-front-5 {
+    transform: translateZ(-500vw);
+}
+.World .stage .house .wall-front-5-1 {
+    transform: translateZ(-470vw);
+}
